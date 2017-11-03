@@ -1,0 +1,78 @@
+{
+  "name": "@whitetrefoil/jest-look-like-matcher",
+  "version": "0.0.0",
+  "description": "A jest matcher wraps \"html-looks-like\" package.",
+  "main": "lib/common/main.js",
+  "module": "lib/esm/main.js",
+  "typings": "lib/types/main.d.ts",
+  "scripts": {
+    "prepublishOnly": "node scripts/prepublish-checklist.js && npm run build",
+    "build": "rimraf lib && tsc && tsc -p tsconfig.common.json",
+    "publish": "echo \"Done publishing, don't forget to:\n  1. **dist-tag** your channel in npm.\n  2. bump version in package.json\nGood luck with the publish ;)\"",
+    "test": "jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitetrefoil/jest-look-like-matcher.git"
+  },
+  "author": "WhiteTrefoil <zhangxiao@whitetrefoil.com>",
+  "license": "Unlicense",
+  "files": [
+    "lib/**/*.js",
+    "lib/types/**/*.d.ts"
+  ],
+  "engines": {
+    "node": ">=8.8.1"
+  },
+  "dependencies": {
+    "html-looks-like": "^1.0.3",
+    "preact-render-to-string": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "preact": "^8.2.6",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.1.4",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "peerDependencies": {
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!**/*.d.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/~.*"
+    ],
+    "coverageDirectory": "test_results",
+    "coverageReporters": [
+      "clover",
+      "lcov",
+      "text-summary"
+    ],
+    "globals": {
+      "ts-jest": {
+        "skipBabel": false,
+        "useBabelrc": true
+      }
+    },
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "moduleNameMapper": {},
+    "setupFiles": [],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  }
+}
