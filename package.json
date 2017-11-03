@@ -1,6 +1,6 @@
 {
   "name": "@whitetrefoil/jest-look-like-matcher",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "description": "A jest matcher wraps \"html-looks-like\" package.",
   "main": "lib/common/main.js",
   "module": "lib/esm/main.js",
