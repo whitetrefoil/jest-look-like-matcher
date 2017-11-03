@@ -1,6 +1,6 @@
 {
   "name": "@whitetrefoil/jest-look-like-matcher",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.1",
   "description": "A jest matcher wraps \"html-looks-like\" package.",
   "main": "lib/common/main.js",
   "module": "lib/esm/main.js",
@@ -9,7 +9,7 @@
     "prepublishOnly": "node scripts/prepublish-checklist.js && npm run build",
     "build": "rimraf lib && tsc && tsc -p tsconfig.common.json",
     "publish": "echo \"Done publishing, don't forget to:\n  1. **dist-tag** your channel in npm.\n  2. bump version in package.json\nGood luck with the publish ;)\"",
-    "test": "jest --no-cache"
+    "test": "tslint . && jest --no-cache"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{ts,js}",
+      "src/**/*.{tsx,ts,jsx,js}",
       "!**/*.d.ts"
     ],
     "coveragePathIgnorePatterns": [
@@ -64,13 +64,15 @@
     },
     "mapCoverage": true,
     "moduleFileExtensions": [
+      "ts",
+      "tsx",
       "js",
-      "json",
-      "ts"
+      "jsx",
+      "json"
     ],
     "moduleNameMapper": {},
     "setupFiles": [],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "transform": {
       ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     }
