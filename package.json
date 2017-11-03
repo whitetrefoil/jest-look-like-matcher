@@ -19,7 +19,8 @@
   "license": "Unlicense",
   "files": [
     "lib/**/*.js",
-    "lib/types/**/*.d.ts"
+    "lib/types/**/*.d.ts",
+    "README.md"
   ],
   "engines": {
     "node": ">=8.8.1"
