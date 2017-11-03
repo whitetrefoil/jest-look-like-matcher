@@ -16,9 +16,9 @@ In `"package.json"`:
 
 ```json
 {
-  // ...
+  "...": "...",
   "jest": {
-    // ...
+    "...": "...",
     "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.ts"
   }
 }
