@@ -47,6 +47,11 @@ it('should work', () => {
 Changelog & Roadmap
 -------------------
 
+### v0.1.3
+
+* Upgrade peer dep "jest" to v22.
+* Some other upgrades & optimizations.
+
 ### v0.1.2
 
 * Make import easier.
