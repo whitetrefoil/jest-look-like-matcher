@@ -47,6 +47,10 @@ it('should work', () => {
 Changelog & Roadmap
 -------------------
 
+### v0.1.1
+
+* Include README file in npm release.
+
 ### v0.1.0
 
 * Initial release.
