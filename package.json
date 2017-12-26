@@ -30,17 +30,17 @@
     "preact-render-to-string": "^3.7.0"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.5",
-    "jest": "^21.2.1",
-    "preact": "^8.2.6",
+    "@types/jest": "^21.1.9",
+    "jest": "^22.0.4",
+    "preact": "^8.2.7",
     "rimraf": "^2.6.2",
-    "ts-jest": "^21.1.4",
+    "ts-jest": "^22.0.0",
     "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "typescript": "^2.6.2"
   },
   "peerDependencies": {
-    "@types/jest": "^21.1.5",
-    "jest": "^21.2.1"
+    "@types/jest": "^21.1.9",
+    "jest": "^22.0.4"
   },
   "jest": {
     "collectCoverage": true,

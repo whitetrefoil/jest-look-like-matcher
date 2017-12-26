@@ -1,6 +1,6 @@
 // tslint:disable:no-import-side-effect no-implicit-dependencies
 
-import * as htmlLooksLike from 'html-looks-like'
+import htmlLooksLike from 'html-looks-like'
 import { render } from 'preact-render-to-string'
 
 declare global {
