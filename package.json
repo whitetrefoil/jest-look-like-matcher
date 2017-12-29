@@ -30,7 +30,7 @@
     "preact-render-to-string": "^3.7.0"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.9",
+    "@types/jest": "^22.0.0",
     "jest": "^22.0.4",
     "preact": "^8.2.7",
     "rimraf": "^2.6.2",
@@ -39,7 +39,7 @@
     "typescript": "^2.6.2"
   },
   "peerDependencies": {
-    "@types/jest": "^21.1.9",
+    "@types/jest": "^22.0.0",
     "jest": "^22.0.4"
   },
   "jest": {
