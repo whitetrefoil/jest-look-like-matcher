@@ -47,6 +47,10 @@ it('should work', () => {
 Changelog & Roadmap
 -------------------
 
+### v0.1.4
+
+* Disable "allowSyntheticDefaultImports" to prevent importing issue.
+
 ### v0.1.3
 
 * Upgrade peer dep "jest" to v22.
